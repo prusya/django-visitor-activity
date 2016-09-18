@@ -1,0 +1,21 @@
+=====
+Visitor Activity
+=====
+
+Visitor Activity is an app to track down source and data for requested urls and 
+writes it to file.
+Will be merged into core app consisting of handy tools in future.
+
+Quick start
+-----------
+
+1. Add 'visitor_activity' to your installed apps
+
+INSTALLED_APPS = (
+    ...
+    'visitor_activity.apps.VisitorActivityConfig',
+)
+
+2. Specify USER_ACTIVITY_LOG_FILENAME. Path to a logging file.
+
+USER_ACTIVITY_LOG_FILENAME = os.path.join(BASE_DIR, 'visitor_activity.log')
